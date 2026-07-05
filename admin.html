@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VNX TOPUP Admin Panel</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<!-- Login -->
+<div id="loginPage" class="login-page">
+
+<div class="login-box">
+<h2>💛 VNX TOPUP</h2>
+<p>Admin Login</p>
+
+<input type="email" id="email" placeholder="Admin Email">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard" style="display:none;">
+
+<div class="sidebar">
+
+<h2>💛 VNX</h2>
+
+<ul>
+
+<li onclick="showPage('products')">💎 Products</li>
+
+<li onclick="showPage('images')">🖼️ Images</li>
+
+<li onclick="showPage('video')">🎥 Video</li>
+
+<li onclick="showPage('offer')">🎁 Offer</li>
+
+<li onclick="showPage('reviews')">⭐ Reviews</li>
+
+<li onclick="logout()">🚪 Logout</li>
+
+</ul>
+
+</div>
+
+<div class="content">
+
+<!-- Products -->
+<div id="products" class="page">
+
+<h2>💎 Products</h2>
+
+<p>Diamond, Weekly, Monthly, Level Up এখান থেকে Edit করা যাবে।</p>
+
+</div>
+
+<!-- Images -->
+<div id="images" class="page" style="display:none;">
+
+<h2>🖼️ Images</h2>
+
+<p>Logo, Diamond, Weekly, Monthly Image Upload এখানে হবে।</p>
+
+</div>
+
+<!-- Video -->
+<div id="video" class="page" style="display:none;">
+
+<h2>🎥 Video</h2>
+
+<p>YouTube Video Link এখানে Update হবে।</p>
+
+</div>
+
+<!-- Offer -->
+<div id="offer" class="page" style="display:none;">
+
+<h2>🎁 Today's Offer</h2>
+
+<p>Offer এখান থেকে পরিবর্তন করা যাবে।</p>
+
+</div>
+
+<!-- Reviews -->
+<div id="reviews" class="page" style="display:none;">
+
+<h2>⭐ Reviews</h2>
+
+<p>Customer Review এখান থেকে Edit করা যাবে।</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
